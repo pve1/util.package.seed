@@ -1,7 +1,6 @@
-(eval-when (:compile-toplevel :load-toplevel :execute)
-  (ignore-errors (make-package :util.package.seed :use '(:cl)))
-  (in-package :util.package.seed)
-  (setf *readtable* (capitalized-export:make-capitalized-export-readtable)))
+(package.seed:define-seed-package :util.package.seed :capitalized-export t)
+
+(in-package :util.package.seed)
 
 (defun Unexport-all (&optional (package *package*))
   (let (exported-symbols)
