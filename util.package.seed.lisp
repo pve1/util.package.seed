@@ -1,4 +1,4 @@
-(package.seed:define-seed-package :util.package.seed :capitalized-export t)
+(package.seed:define-seed-package :util.package.seed :export-capitalized t)
 
 (in-package :util.package.seed)
 
